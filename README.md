@@ -29,10 +29,10 @@ ________________________________________________
 Style the application
 Number and name of feature: Style the application
 
-Estimate of time needed to complete: 2h 
+Estimate of time needed to complete: 1h
 
-Start time: 3:30
+Start time: 6:38
 
-Finish time: 6:38
+Finish time: 7:30
 
-Actual time needed to complete:3h
+Actual time needed to complete:1.5h

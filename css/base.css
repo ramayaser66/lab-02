@@ -5,6 +5,7 @@
 img{
     width: 250px;
     height: 250px;
+    border: solid 2px brown;
 }
 
 section{
