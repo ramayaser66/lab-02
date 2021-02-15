@@ -1,3 +1,34 @@
 .photo-template{
     display: none;
 }
+
+img{
+    width: 250px;
+    height: 250px;
+}
+
+section{
+    text-align: center;
+    /* border: solid 2px black;
+    width: 35%;
+    margin: auto; */
+    margin: 20px;
+    padding: 2%;
+    height: 400px;
+    width: 300px;
+    display: inline-block;
+    background-color:rgb(240, 220, 220);
+    border-radius: 3%;
+}
+
+main{
+margin-left: 50px;
+}
+select{
+    padding: 10px 32px;
+    background-color:rgba(232, 237, 243, 0.623);
+    text-align: center;
+}
+h2,p{
+    font-family: 'Reggae One', cursive;
+}

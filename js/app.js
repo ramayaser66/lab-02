@@ -1,12 +1,14 @@
 'use strict';
 var keywords=[];
 var uniqueNames = [];
+var arrayObj = [];
 function Photo(title,description,keyword,image,horns){
   this.title=title;
   this.description=description;
   this.keyword=keyword;
   this.image=image;
   this.horns=horns;
+  arrayObj.push(this);
 }
 Photo.prototype.renderImages=function(){
   let newPhotoTemplate=$('.photo-template').clone();
@@ -39,21 +41,34 @@ Photo.readJson = () => {
         $("#select").append("<option value="+value+">"+value+"</option>");
       });
 
-      $("#select").on('click','option',function(){
-        this
-      })
+
 
     });
 };
 
+function selectPic(){
+  $("#select").on('change',function(){
+    var name=this.options[this.selectedIndex].text;
+    var newPhotoTemplate2=$('.photo-template').clone();
+    $('main').html("");
+    $('main').append(newPhotoTemplate2);  
+    arrayObj.forEach(function(value,i){
+      if(name===value.keyword){
+        value.renderImages();
+      }
+    });
+    
+
+  });
+}
+
+
 
 
 // $(() => Photo.readJson());
-
-
 $( document ).ready(function() {
   Photo.readJson();
-
+  selectPic();
 
 });
 
