@@ -1,4 +1,4 @@
-.photo-template{
+/* .photo-template{
     display: none;
 }
 
@@ -10,9 +10,6 @@ img{
 
 section{
     text-align: center;
-    /* border: solid 2px black;
-    width: 35%;
-    margin: auto; */
     margin: 20px;
     padding: 2%;
     height: 400px;
@@ -32,4 +29,88 @@ select{
 }
 h2,p{
     font-family: 'Reggae One', cursive;
+} */
+
+body{
+background-color: rgb(154, 255, 158);
+}
+
+main{
+    overflow: hidden;
+    display: flex;
+    width: 99%;
+    height: 100%;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 7px;
+    margin: 15px;
+   background-color:rgb(78, 206, 174);
+}
+img{
+    width: 250px;
+    height: 250px;
+    /* border: solid 3px brown; */
+    margin: 50px;
+
+    padding: 10px 10px 20px 10px;
+    border: 1px solid #BFBFBF;
+    background-color: white;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+div{
+    align-items:flex-end;
+    margin: 20px; 
+    border: 3px solid #000f80;
+    border-radius: 5%;
+
+
+}
+
+p {
+ width: 230px; 
+ text-align: center;
+ margin: auto;
+ padding: 20px; 
+ font-family: 'Reggae One', cursive;
+
+ color: white;
+
+}
+ 
+h2{
+    font-family: 'Reggae One', cursive;
+    width: 230px; 
+    margin: auto;
+    margin-top: 15px;
+    color: white; 
+
+}
+
+hr {
+    width: 200px; 
+}
+
+
+h1{
+    text-align: center;
+    color:#000f80;
+    /* justify-content: space-around;  */
+}
+#btn{
+    text-align: center;
+}
+button{
+    border-radius: 5%;
+    border: 0px;
+    width: 150px;
+    height: 50px;
+    font-size: large;
+    background-color:rgb(78, 206, 174,0.7);
+}
+select{
+    width: 150px;
+    height: 30px;
+    background-color:rgba(0, 2, 139, 0.2);
 }
