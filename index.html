@@ -10,14 +10,18 @@
   </head>
   <body>
     <header>
-      <h1>The Gallery of Horns</h1>
+      <h1 >The Gallery of Horns</h1>
+      <section id="btn">
       <select id="select">
         <option value="default">Filter by Keyword</option>
       </select>
+      <br>
+      <br>
       <button id="page1">Page 1</button>
       <button id="page2">Page 2</button>
-      <button id="title">Sort By Title</button>
-      <button id="horns">Sort By Horns</button>
+      <button id="title">Sort All By Title</button>
+      <button id="horns">Sort All By Horns</button>
+    </section>
     </header>
     <main>
       <!-- <section id="one" class="photo-template">
@@ -29,6 +33,7 @@
       <template id='temp' type="text/x-tmpl-mustache">
         <div class="divPage2">
         <h2>{{title}}</h2>
+        <hr> 
         <img src={{image}} alt="">
         <p>{{description}}</p>
       </div>

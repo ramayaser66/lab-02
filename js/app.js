@@ -3,6 +3,7 @@ var keywords=[];
 var uniqueNames = [];
 var arrayObj = [];
 var arrayObj3 = [];
+var temtex="<template id='temp' type='text/x-tmpl-mustache'><div class='divPage2'><h2>{{title}}</h2><hr> <img src={{image}} alt=''><p>{{description}}</p></div></template>";
 function Photo(title,description,keyword,image,horns){
   this.title=title;
   this.description=description;
@@ -34,7 +35,6 @@ Photo.readJson = () => {
   $.ajax('data/page-1.json',ajaxSettings)
     .then(data =>{
       arrayObj=[];
-
       data.forEach(item => {
         keywords.push(item.keyword);
         let photo= new Photo(item.title,item.description,item.keyword,item.image_url,item.horns);
@@ -83,7 +83,7 @@ Photo.readJson2 = () => {
 function selectPic(){
   $("#select").on('change',function(){
     var name=this.options[this.selectedIndex].text;
-    $(".divPage2").html("");
+    $(".divPage2").remove();
     arrayObj3=arrayObj;
     let arrayObj2=arrayObj3;
     arrayObj3=[];
@@ -97,6 +97,7 @@ function selectPic(){
 }
 
 function page1(){
+  $(".divPage2").remove();
   keywords=[];
   uniqueNames=[];
   $(".divPage2").html("");
@@ -107,6 +108,7 @@ function page1(){
 }
 
 function page2(){
+  $(".divPage2").remove();
   keywords=[];
   uniqueNames=[];
   $(".divPage2").html("");
@@ -119,12 +121,13 @@ function page2(){
 
 
 function sortTitle(){
+  $(".divPage2").remove();
   arrayObj.sort(function(a, b){
     if(a.title < b.title) { return -1; }
     if(a.title > b.title) { return 1; }
     return 0;
   });
-  $(".divPage2").html("");
+  // $(".divPage2").html("");
   arrayObj.forEach(function(value,i){
     value.renderImagesPageTwo();
 
@@ -132,12 +135,12 @@ function sortTitle(){
 }
 
 function sortHorn(){
+  $(".divPage2").remove();
   arrayObj.sort(function(a, b){
     if(a.horns < b.horns) { return 1; }
     if(a.horns > b.horns) { return -1; }
     return 0;
   });
-  $(".divPage2").html("");
   arrayObj.forEach(function(value,i){
     value.renderImagesPageTwo();
 
