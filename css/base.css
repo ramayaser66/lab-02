@@ -32,7 +32,8 @@ h2,p{
 } */
 
 body{
-background-color: rgb(154, 255, 158);
+/* background-color: rgb(154, 255, 158); */
+background-color:rgba(0, 2, 139, 0.2);
 }
 
 main{
@@ -89,7 +90,7 @@ h2{
 }
 
 hr {
-    width: 200px; 
+    width: 100px; 
 }
 
 
@@ -107,7 +108,8 @@ button{
     width: 150px;
     height: 50px;
     font-size: large;
-    background-color:rgb(78, 206, 174,0.7);
+    background-color:rgba(38, 156, 127, 0.7);
+   
 }
 select{
     width: 150px;

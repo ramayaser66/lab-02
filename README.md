@@ -39,13 +39,53 @@ Actual time needed to complete:1.5h
 
 ________________________________________________
 
-Pagination
+ Pagination
 Number and name of feature: Pagination
 
-Estimate of time needed to complete: 
+Estimate of time needed to complete: 30 min
 
-Start time:
+Start time: 2:00 pm
 
-Finish time: 
+Finish time: 3:30 pm 
 
-Actual time needed to complete:
+Actual time needed to complete: 1 hr and 30 min 
+________________________________________________
+
+ Templating
+Number and name of feature:  Templating
+
+Estimate of time needed to complete: 1 hr
+
+Start time:  3:30 pm
+
+Finish time: 4:45 pm 
+
+Actual time needed to complete: 1 hr and 15 min 
+
+________________________________________________ 
+
+
+ Sort the images
+Number and name of feature: Styling with  Sort the images
+
+Estimate of time needed to complete: 2 hr
+
+Start time:  4:45 pm 
+
+Finish time: 8:00 pm 
+
+Actual time needed to complete: 3 hr and 15 min 
+
+
+________________________________________________ 
+
+Styling with Flexbox 
+Number and name of feature: Styling with Flexbox
+
+Estimate of time needed to complete: 2 hr
+
+Start time:  8:00 pm 
+
+Finish time: 10:20 pm 
+
+Actual time needed to complete: 2 hr and 20 min 
