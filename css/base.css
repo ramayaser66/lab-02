@@ -33,7 +33,10 @@ h2,p{
 
 body{
 /* background-color: rgb(154, 255, 158); */
-background-color:rgba(0, 2, 139, 0.2);
+/* background-color:rgba(0, 2, 139, 0.2); */
+background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpzxqKUmAxbgffDMt3nJquywlTt--MPBRNgQ&usqp=CAU);
+background-repeat: no-repeat;
+background-size: cover;
 }
 
 main{
