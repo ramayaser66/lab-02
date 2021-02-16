@@ -12,14 +12,7 @@ function Photo(title,description,keyword,image,horns){
   this.horns=horns;
   arrayObj.push(this);
 }
-// Photo.prototype.renderImages=function(){
-//   let newPhotoTemplate=$('.photo-template').clone();
-//   $('main').append(newPhotoTemplate)
-//   newPhotoTemplate.find('h2').text(this.title);
-//   newPhotoTemplate.find('img').attr('src',this.image);
-//   newPhotoTemplate.find('p').text(this.description);
-//   newPhotoTemplate.removeClass('photo-template');
-// }
+
 Photo.prototype.renderImagesPageTwo=function(){
   let newPhotoTempe=$('#temp').html();
   $('main').append(Mustache.render(newPhotoTempe, this));
@@ -127,7 +120,7 @@ function sortTitle(){
     if(a.title > b.title) { return 1; }
     return 0;
   });
-  // $(".divPage2").html("");
+
   arrayObj.forEach(function(value,i){
     value.renderImagesPageTwo();
 
@@ -149,14 +142,14 @@ function sortHorn(){
 
 
 
-// $(() => Photo.readJson());
+
 $( document ).ready(function() {
   $("#page1").on("click",page1);
   $("#page2").on("click",page2);
   $("#title").on("click",sortTitle);
   $("#horns ").on("click",sortHorn);
   Photo.readJson();
-  // Photo.readJson2();
+
   selectPic();
 
 });
